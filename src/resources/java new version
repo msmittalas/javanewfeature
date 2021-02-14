@@ -1,0 +1,46 @@
+Functional Interfaces
+Default Method in interface
+Static Method in interface
+Predicate / Function / Consumer Interface 
+Lambda Expression
+:: method ref.
+Stream API
+Date & Time API   (joda.org introduced   thats why knws as JODA API)
+
+
+ 1996 1 version
+ 
+Main intension 
+	More focused  on 
+	1. To simplify programming 
+	2. To enable Functional Programming ( benefits of Fun Prog)
+	3. To get the benefits of Multi-Core benefits  Parallel Programming using Stream API
+
+USe of Lambda :
+1. to enable Functional Programming in Java
+2. to write more readable  , maintainable and concise code 
+3. to use other APIS very easily 
+4. to enable Parallel Processing
+
+lambda : 
+  can take any number of parameter
+  if only one param then no parathesis not req
+  if only one statement in function then no curly parathensis 
+  return keyword is not required 
+-----------------------------------------------
+Functional Interface : 
+	Interface with only one method 
+	Example :-> Runnable / Callable / ActionListener /Comparable  compareTo()/  Comparator compare()
+	Function interface can be used to invoke 
+	Any number of default/ static method 
+	Only One Abstract method
+	@FunctionalInterface annotation optional 
+	
+-------------------------------------------------
+Default Method in interface :  
+ No Concrete methods were present in Interface
+ Every variable in interface is p s final
+ why we need Default Method ?
+ from 1.8 version  we can put concrete method in interface
+
+
