@@ -1,0 +1,4 @@
+difference between in Abstract / Interface 
+https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java/#:~:text=Abstract%20class%20vs%20Interface%20Type%20of%20methods:%20Interface,it%20can%20have%20default%20and%20static%20methods%20also.
+
+WHen you want little implementation  and should be used by all the child class then Abstract class else Interface if you want pure abstractions 

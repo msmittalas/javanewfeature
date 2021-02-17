@@ -3,6 +3,7 @@ package com.ysmdemo.java11newfeature;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.BiPredicate;
@@ -32,10 +33,36 @@ BinaryOperator<T>	T	apply(T,T)	2 (T, T)
 public class OCJPFunctionalProg {
 
 	public static void main(String[] args) {
-		Runnable r = new ChainDemo();
+		Runnable r = new OptionalDemo();
 		r.run();
 		}
 }
+//Returning an Optional
+
+/*
+ 
+   How do we express this we dont knoiw or not applicable answer in Java ?
+   We use the Optional type.
+   An Optional is created using a factory.
+   You can either request an empty Optional or pass a value for the optional to wrap
+ * */
+
+class OptionalDemo  implements Runnable
+{
+		public void run()
+		{
+			Optional<Integer> id= Optional.of(10);
+			//System.out.println(i.isPresent());
+			Function<Integer, Optional<Integer>> data= (x) -> Optional.ofNullable(x);
+			System.out.println(data.apply(null).isPresent());
+			Integer i=null;
+			Optional<Integer> o= (i==null) ? Optional.empty():Optional.of(i) ;
+			//same can  be written in
+			Optional<Integer> da=Optional.ofNullable(10);
+		}
+		
+}
+
 
 
 //Functional Chaining 
